@@ -1,0 +1,91 @@
+:root {
+  --green: #0f3d2e;
+  --green-2: #164a38;
+  --gold: #c6a156;
+  --ink: #1c1408;
+  --paper: #f7f4ee;
+  --muted: #5c5346;
+  --line: #e4dccb;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 18px/1.55 "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+}
+
+a { color: var(--green); }
+
+header.bar {
+  background: var(--green);
+  color: var(--paper);
+  padding: 22px 24px;
+}
+
+header.bar a {
+  color: var(--paper);
+  text-decoration: none;
+  letter-spacing: 0.14em;
+  font: 600 13px/1 "Avenir Next", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  font: 15px/1.2 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+nav a { color: var(--gold); text-decoration: none; }
+
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 36px 0 8px;
+}
+
+.gold { color: var(--gold); }
+
+.lede { font-size: 22px; color: var(--muted); margin-top: 0; }
+
+ul { padding-left: 1.2em; }
+
+li { margin: 6px 0; }
+
+.card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin: 18px 0;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font: 14px/1.4 "Avenir Next", "Segoe UI", sans-serif;
+  padding: 24px;
+  max-width: 740px;
+  margin: 0 auto;
+}
